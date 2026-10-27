@@ -1,0 +1,9 @@
+kind: pattern
+id: repository
+name: Repository
+intent: Abstract access to collections of domain objects when persistence independence is needed.
+guidance:
+  - Introduce a repository port only when a use case genuinely needs a persistence abstraction.
+  - In the ArchCore hexagonal profile, place repository interfaces in application and implementations in infrastructure.
+  - Do not create a generic repository layer merely for CRUD convenience.
+enforcement: advisory

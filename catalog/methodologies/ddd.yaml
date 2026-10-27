@@ -1,0 +1,8 @@
+kind: methodology
+id: ddd
+guidance:
+  - Model domain concepts explicitly when domain complexity warrants it.
+  - Distinguish entities, value objects, aggregates and bounded contexts when useful.
+  - Keep persistence concerns out of core domain models.
+  - Avoid unnecessary DDD abstractions for simple applications.
+notes: Guidance only; selecting DDD alone does not create enforceable rules.

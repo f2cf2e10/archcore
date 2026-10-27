@@ -1,0 +1,7 @@
+kind: principle
+id: solid
+name: SOLID
+guidance:
+  - Use responsibilities, substitutability, interface design, and dependency inversion as review heuristics.
+  - Do not create interfaces simply to satisfy a slogan.
+enforcement: advisory

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "archcore",
+  "version": "0.1.0",
+  "description": "Project-aware architecture governance, reusable knowledge and deterministic Python architecture scanning",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/archcore-setup/SKILL.md",
+      "interface": {
+        "displayName": "ArchCore",
+        "shortDescription": "Architecture contracts, review and project graphs",
+        "longDescription": "Inspect participating projects with architecture knowledge and a deterministic Python import graph.",
+        "category": "Developer Tools"
+      }
+    }
+  }
+}

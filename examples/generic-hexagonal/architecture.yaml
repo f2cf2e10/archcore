@@ -1,0 +1,23 @@
+# Generic opt-in example, not tied to any existing repository.
+architecture:
+  style: hexagonal
+  layers:
+    domain: src/my_package/domain
+    application: src/my_package/application
+    infrastructure: src/my_package/infrastructure
+methodologies:
+  - ddd
+principles:
+  - kiss
+  - yagni
+patterns:
+  - dto  # Available when justified; never required for every boundary.
+governance:
+  protection:
+    domain: human_approval
+    application: human_approval
+    infrastructure: allowed_within_scope
+  unclassified: human_approval
+  protected_files:
+    - architecture.yaml
+  exceptions: []

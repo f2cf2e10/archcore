@@ -1,0 +1,8 @@
+kind: pattern
+id: strategy
+name: Strategy
+intent: Encapsulate interchangeable algorithms behind a shared contract.
+guidance:
+  - Use for genuine variation points, not hypothetical future alternatives.
+  - Prefer simpler functions or conditionals for small fixed choices.
+enforcement: advisory

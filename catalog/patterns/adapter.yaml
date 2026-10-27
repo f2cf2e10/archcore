@@ -1,0 +1,8 @@
+kind: pattern
+id: adapter
+name: Adapter
+intent: Translate between external interfaces and application contracts.
+guidance:
+  - Isolate external protocols, databases, and frameworks from domain behavior.
+  - Avoid adapters that only forward identical arguments without a useful boundary.
+enforcement: advisory

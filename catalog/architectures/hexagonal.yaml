@@ -1,0 +1,21 @@
+kind: architecture
+id: hexagonal
+layers:
+  domain:
+    dependencies: []
+    protection_floor: human_approval
+  application:
+    dependencies: [domain]
+    protection_floor: human_approval
+  infrastructure:
+    dependencies: [domain, application]
+    protection_floor: allowed_within_scope
+conventions:
+  ports: application
+  adapters: infrastructure
+notes: This is an ArchCore opinionated hexagonal profile, not a universal folder convention.
+
+# Static restrictions; extend centrally when additional frameworks are supported.
+forbidden_imports:
+  domain: [sqlalchemy, django, flask, fastapi, requests, httpx, psycopg, psycopg2, sqlite3]
+  application: [sqlalchemy, django, flask, fastapi, psycopg, psycopg2]

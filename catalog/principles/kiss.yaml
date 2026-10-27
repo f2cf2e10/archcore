@@ -1,0 +1,7 @@
+kind: principle
+id: kiss
+name: Keep It Simple, Stupid
+guidance:
+  - Prefer the simplest solution that meets current requirements.
+  - Challenge abstraction, indirection, and mapping layers without demonstrated value.
+enforcement: advisory

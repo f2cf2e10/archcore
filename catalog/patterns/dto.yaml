@@ -1,0 +1,11 @@
+kind: pattern
+id: dto
+name: Data Transfer Object
+intent: Carry data across a meaningful boundary without business behavior.
+guidance:
+  - Use only when transport, serialization, API stability, or contract isolation justifies another representation.
+  - Put HTTP and external-service representations in infrastructure adapters; put use-case input/output contracts in application only when needed.
+  - Do not treat domain entities or value objects as DTOs.
+  - Avoid one-to-one mapping chains that add no boundary value.
+  - Do not generate DTOs for every entity or use case automatically.
+enforcement: advisory

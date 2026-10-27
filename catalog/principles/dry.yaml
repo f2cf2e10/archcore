@@ -1,0 +1,7 @@
+kind: principle
+id: dry
+name: Don't Repeat Yourself
+guidance:
+  - Consolidate duplicated knowledge and policy, not merely similar-looking code.
+  - Avoid premature abstraction across unrelated contexts.
+enforcement: advisory

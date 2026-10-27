@@ -1,0 +1,8 @@
+kind: pattern
+id: factory
+name: Factory
+intent: Centralize construction when creation logic has meaningful complexity or invariants.
+guidance:
+  - Prefer direct construction when it is already clear and safe.
+  - Do not add a factory solely to wrap a single constructor.
+enforcement: advisory

@@ -1,0 +1,7 @@
+kind: principle
+id: yagni
+name: You Aren't Gonna Need It
+guidance:
+  - Do not implement speculative extension points or imagined future requirements.
+  - Add complexity when a present use case requires it.
+enforcement: advisory
